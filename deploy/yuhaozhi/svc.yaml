@@ -6,18 +6,3 @@ metadata:
 spec:
   ports:
     - port: 9200
----
-kind: Endpoints
-apiVersion: v1
-metadata:
-  name: es2
-  namespace: p1
-subsets:
-  - addresses:
-      - ip: 192.168.1.208
-    ports:
-      - port: 9200
-  - addresses:
-      - ip: 192.168.1.209
-    ports:
-      - port: 9200
